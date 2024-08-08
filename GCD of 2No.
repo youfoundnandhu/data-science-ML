@@ -1,0 +1,19 @@
+num1 = int(input(" Enter the First value : "))
+num2 = int(input(" Enter the Second value : "))
+a = num1
+b = num2
+while(num2 != 0):
+    temp = num2
+    num2 = num1 % num2
+    num1 = temp
+gcd = num1
+print(" GCD of {0} and {1} = {2}".format(a, b, gcd))
+
+OUTPUT
+........................
+enter number of elements required: 3
+23
+43
+12
+Original List: [23, 43, 12]
+Sorted List [12, 23, 43]
