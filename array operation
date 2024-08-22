@@ -1,0 +1,40 @@
+import numpy as np
+ar1=np.array(([1,3],[5,7]))
+ar2=np.array(([2,4],[6,8]))
+print("matrix addition")
+print(np.add(ar1,ar2))
+print("matrix subtraction")
+print(np.subtract(ar1,ar2))
+print("matrix multiply")
+print(np.multiply(ar1,ar2))
+print("matrix division")
+print(np.divide(ar1,ar2))
+print("matrix multiplication")
+print(np.dot(ar1,ar2))
+print("matrix transpose")
+print(ar1.transpose())
+print("sum of diagonal matrix ")
+print(np.trace(ar1))
+
+OUTPUT
+............
+matrix addition
+[[ 3  7]
+ [11 15]]
+matrix subtraction
+[[-1 -1]
+ [-1 -1]]
+matrix multiply
+[[ 2 12]
+ [30 56]]
+matrix division
+[[0.5        0.75      ]
+ [0.83333333 0.875     ]]
+matrix multiplication
+[[20 28]
+ [52 76]]
+matrix transpose
+[[1 5]
+ [3 7]]
+sum of diagonal matrix 
+8
