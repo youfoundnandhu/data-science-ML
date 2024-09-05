@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data using numpy arrays
+months = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+affordable = np.array([300, 320, 310, 330, 340, 360, 350, 365, 370, 375, 380, 390])
+luxury = np.array([200, 220, 210, 230, 240, 250, 260, 270, 275, 280, 285, 290])
+super_luxury = np.array([100, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160])
+
+# Plotting the data
+plt.scatter(months, affordable, color='green', label='Affordable Segment', s=100, marker='o')
+plt.scatter(months, luxury, color='yellow', label='Luxury Segment', s=100, marker='^')
+plt.scatter(months, super_luxury, color='blue', label='Super Luxury Segment', s=100, marker='s')
+plt.title("Sales Data")
+plt.xlabel("Months")
+plt.ylabel("Sales of Segment")
+
+# Adding grid lines
+plt.grid(True)
+
+# Adding a legend
+plt.legend()
+
+# Displaying the plot
+plt.show()
